@@ -1,5 +1,5 @@
 # FireSimulation
- Eulerian fluid sim adapted to look like fire. Part of bachelor's thesis.
+ Eulerian fluid sim in Unity adapted to look like fire. Part of bachelor's thesis.
 
  ![FireSimBox](https://github.com/Antonhejhejhej/FireSimulation/assets/123376072/31e8b266-f749-4c4c-9789-6a1e32010eb2)
 ![FireSimRabbit2](https://github.com/Antonhejhejhej/FireSimulation/assets/123376072/b04420b3-a09a-48d2-adb9-c4c8687f022b)
