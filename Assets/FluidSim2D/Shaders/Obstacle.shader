@@ -16,8 +16,6 @@ Shader "FluidSim/Obstacle"
 			#pragma fragment frag
 			
 			uniform float2 _InverseSize;
-			uniform float2 _Point;
-			uniform float _Radius;
 		
 			struct v2f 
 			{
@@ -42,11 +40,6 @@ Shader "FluidSim/Obstacle"
 				if(IN.uv.x >= 1.0-_InverseSize.x) result = float4(1,1,1,1);
 				if(IN.uv.y <= _InverseSize.y) result = float4(1,1,1,1);
 				if(IN.uv.y >= 1.0-_InverseSize.y) result = float4(1,1,1,1);
-				
-				//draw point
-				float d = distance(_Point, IN.uv);
-			    
-			    if(d < _Radius) result = float4(1,1,1,1);
 			
 				return result;
 			}

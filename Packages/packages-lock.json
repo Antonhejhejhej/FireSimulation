@@ -171,12 +171,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.utj.profilerreader": {
-      "version": "file:C:/Users/Moccamaster/Downloads/ProfilerReader-main/ProfilerReader-main",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {}
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

@@ -39,22 +39,11 @@ Shader "FluidSim/GUI"
 			
 			float4 frag(v2f IN) : COLOR
 			{
-			 	float3 col = _FluidColor * tex2D(_MainTex, IN.uv).x;
-
-				
-			 	
-			 	//float obs = tex2D(_Obstacles, IN.uv).x;
-
-				
-			 	
-			 	//float3 result = lerp(col, _ObstacleColor, obs);
+			 	float3 col = tex2D(_MainTex, IN.uv).x;
 
 				float3 resultFire = lerp(_FireTail, _FireCore, col.x);
 
-				//return float4(result,1); ORIGINAL
-
-				return float4(resultFire, col.x);
-			 	
+				return float4(resultFire, col.x);	 	
 				
 			}
 			

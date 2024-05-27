@@ -884,6 +884,10 @@ MonoBehaviour:
   m_obstaclesTex: {fileID: 0}
   fuelTexture: {fileID: 0}
   fuelCamera: {fileID: 1739887824}
+  m_velocityTex: []
+  m_densityTex: []
+  m_pressureTex: []
+  m_temperatureTex: []
   m_impulseTemperature: 3
   m_impulseDensity: 5
   m_temperatureDissipation: 0.99
@@ -933,7 +937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c92750c9d16225047ba06824c8c4f2e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_fluidColor: {r: 1, g: 0.53669226, b: 0, a: 1}
+  m_fluidColor: {r: 1, g: 1, b: 1, a: 1}
   m_obstacleColor: {r: 0, g: 0, b: 0, a: 0}
   fireCoreColor: {r: 1, g: 0.6084654, b: 0.34591186, a: 1}
   fireTailColor: {r: 1, g: 0.17821626, b: 0.015686274, a: 1}
@@ -951,6 +955,10 @@ MonoBehaviour:
   m_obstaclesTex: {fileID: 0}
   fuelTexture: {fileID: 0}
   fuelCamera: {fileID: 1739887824}
+  m_velocityTex: []
+  m_densityTex: []
+  m_pressureTex: []
+  m_temperatureTex: []
   m_impulseTemperature: 3
   m_impulseDensity: 5
   m_temperatureDissipation: 0.99
@@ -6619,7 +6627,7 @@ Transform:
   m_GameObject: {fileID: 1877418278}
   serializedVersion: 2
   m_LocalRotation: {x: -0.14323553, y: 0.268915, z: 0.040477566, w: 0.95159334}
-  m_LocalPosition: {x: 1.58, y: 0.6, z: -5.21}
+  m_LocalPosition: {x: -0.62, y: 0.6, z: -2.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6867,7 +6875,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6aabee7d6507f144ca4d40c6b32bd2a4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

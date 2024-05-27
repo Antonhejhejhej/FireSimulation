@@ -26,7 +26,7 @@ namespace FluidSim2DProject
 
         [SerializeField] RenderTexture m_guiTex, m_divergenceTex, m_obstaclesTex, fuelTexture;
         [SerializeField] private Camera fuelCamera;
-        RenderTexture[] m_velocityTex, m_densityTex, m_pressureTex, m_temperatureTex;
+        [SerializeField] RenderTexture[] m_velocityTex, m_densityTex, m_pressureTex, m_temperatureTex;
 
         public float m_impulseTemperature = 10.0f;
         public float m_impulseDensity = 1.0f;
@@ -230,9 +230,7 @@ namespace FluidSim2DProject
         void AddObstacles()
         {
             m_obstaclesMat.SetVector("_InverseSize", m_inverseSize);
-            m_obstaclesMat.SetVector("_Point", m_obstaclePos);
-            m_obstaclesMat.SetFloat("_Radius", m_obstacleRadius);
-
+            
             Graphics.Blit(null, m_obstaclesTex, m_obstaclesMat);
         }
 
@@ -272,8 +270,8 @@ namespace FluidSim2DProject
             AddObstacles();
 
             //Set the density field and obstacle color.
-            m_guiMat.SetColor("_FluidColor", m_fluidColor);
-            m_guiMat.SetColor("_ObstacleColor", m_obstacleColor);
+            //m_guiMat.SetColor("_FluidColor", m_fluidColor);
+            //m_guiMat.SetColor("_ObstacleColor", m_obstacleColor);
             m_guiMat.SetColor("_FireCore", fireCoreColor);
             m_guiMat.SetColor("_FireTail", fireTailColor);
 
